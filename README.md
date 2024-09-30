@@ -23,9 +23,9 @@ Btw: I'm sorry for the UI interface, I couldn't build something better with that
 
 ## Installation
 
-Before using the app, you need to download Docker first.
+Clone this repository. 
 
-- Build the docker image with the next command:
+- Build the docker image with the next command (you'll need to have Docker on your machine):
 
 		docker build -t app-flask .
   
@@ -37,7 +37,7 @@ After deploying the docker container, access the app in the http://127.0.0.1:500
 
 ## Usage
 
-#### Request new data (big one blue) by clicking in 'Request new data' button.
+#### Request new data (big one blue) by clicking on 'Request new data' button.
 <img src="https://github.com/user-attachments/assets/acb17555-3953-4cd8-95a8-ea4fd5755c48" alt="drawing" width="600"/>
 
 #### Crawled data will be displayed.
@@ -51,9 +51,9 @@ After deploying the docker container, access the app in the http://127.0.0.1:500
 
 ## Storage
 
-As said before, data is storaged using Flask-Cache 'FileSystemCache' system file. With a threshold of 100 items (capacity) and default timeout of 600 seconds.
-Cached files are saved in a folder called 'tmp', wich follows this path: 'app/src/tmp' in the app container.
+As said before, data is stored using Flask-Cache 'FileSystemCache' system file. With a threshold of 100 items (capacity) and a default timeout of 600 seconds.
+Cached files are saved in a folder called 'tmp', which follows this path: 'app/src/tmp' in the app container.
 
 ## Thanks to the HR/Technical team
-Thank you so much for giving to me this challenge. It was a pleasure to create this solution for such a creative coding exercise. :blush:
+Thank you so much for giving me this challenge. It was a pleasure to create this solution for such a creative coding exercise. :blush:
   
