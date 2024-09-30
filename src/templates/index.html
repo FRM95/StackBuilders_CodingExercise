@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Crawler - Stack Builders Code phase 1</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <div class="main-info">
+        <span class="text">Endpoint to crawl: https://news.ycombinator.com/</span>
+        <span class="text">Filter 1: Filter all previous entries with more than five words in the title ordered by the number of comments first.</span>
+        <span class="text">Filter 2: Filter all previous entries with less than or equal to five words in the title ordered by points.</span>
+    </div>
+    <main class="main-content">
+        <div class="methods">
+            <button class="request crawl_data" title="Download new data">Request new data (crawl data)</button>
+        </div>
+        <div class="results">
+            <span class="text">Last request date:</span>
+            <span class="date-results"></span>
+            <span class="text">Last request results:</span>
+            <div class="data-results"></div>
+            <div class="filter-buttons">
+                <button class="request filter filter_1" data-value = "1" title="Filter all previous entries with more than five words in the title ordered by the number of comments first.">Apply filter 1</button>
+                <button class="request filter filter_2" data-value = "2" title="Filter all previous entries with less than or equal to five words in the title ordered by points.">Apply filter 2</button>
+                <button class="reset" title="Disable all filters and restore original data">Show original data</button>
+                <button class="save" title="Save data to backend (cache data)">Save data</button>
+            </div>
+            <span class="data-message text-message"></span>
+            <div class="historical-data">
+                <span class="text">Backend cached data:</span>
+                <div class="cache-results"></div>
+                <span class="data-message-2 text-message"></span>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="/static/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --custom-font: "Quicksand", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    height: 100vh;
+    font-family: var(--custom-font);
+}
+.main-info{
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+.main-content{
+    display: grid;
+    gap: 20px;
+    padding: 10px;
+}
+.results{
+    display: grid;
+    gap: 20px;
+}
+.data-results, .cache-results{
+    display: grid;
+}
+.cache-results{
+    overflow-y: auto;
+    max-height: 125px;
+    width: 700px;
+}
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    color: #393939;
+}
+.text-message{
+    font-weight: bold;
+    color: #c51b1b;
+}
+.crawl_data{
+    background-color: #86b7ea;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.filter_1, .filter_2{
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #46cece;
+}
+.reset{
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #ce9e46;
+}
+.save{
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #46ce7b;
+}
+button{
+    cursor: pointer;
+}
+.historical-data{
+    gap: 10px;
+    display: grid;
+}
